@@ -1,5 +1,6 @@
 v 2
 d Stata material by Max Löffler
 
-p capass   Wrapper for Stata's assert command, throws error messages
-p mydate   Current time stamp
+p capass       Wrapper for Stata's assert command, throws error messages
+p mvcollapse   Simple wrapper for Stata's collapse command, preserves missings
+p mydate       Current time stamp
