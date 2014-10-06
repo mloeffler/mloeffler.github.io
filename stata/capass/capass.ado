@@ -40,11 +40,11 @@ program define capass, byable(onecall)
         // Test assertion
         cap assert `0' `if' `in', fast
         
-        // Let's call the police
-        if (_rc != 0) {
-            noi di as error "`throw'"
-            assert `0' `if' `in', `rc0' `null' `fast'
-        }
+        // Call the police if assertion failed, not in general
+        if (inlist(_rc, 8, 9)) noi di as error "`throw'"
+        
+        // Run real assert command if error occured
+        if (_rc != 0) assert `0' `if' `in', `rc0' `null' `fast'
     }
     // Just assert and leave
     else assert `0' `if' `in', `rc0' `null' `fast'
