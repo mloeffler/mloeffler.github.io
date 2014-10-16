@@ -1,4 +1,4 @@
-*! version 0.1, 02oct2014, Max Löffler <loeffler@zew.de>
+*! version 0.1, 16oct2014, Max Löffler <loeffler@zew.de>
 /**
  * CAPASS - WRAPPER FOR STATA'S ASSERT COMMAND, THROWS ERROR MESSAGES
  * 
@@ -13,6 +13,7 @@
  * @param `fast'  Pass thru for assert's option `fast'
  * 
  * 2014-10-02   Initial version (v0.1)
+ * 2014-10-16   Added Stata version and tagged `exp'
  * 
  *
  * Copyright (C) 2014 Max Löffler <loeffler@zew.de>
@@ -32,8 +33,10 @@
  * 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
  */
 
+version 13
+
 program define capass, byable(onecall)
-    syntax anything(name=0) [if] [in] [, Throw(string) Rc0 Null Fast] 
+    syntax anything(id=exp name=0) [if] [in] [, Throw(string) Rc0 Null Fast] 
     
     // Maybe a normal assert would be alight?
     if ("`throw'" != "") {
