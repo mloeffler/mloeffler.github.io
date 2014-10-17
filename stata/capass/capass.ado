@@ -5,13 +5,6 @@
  * Checks if assertion evaluates to false and, if so, throws an error message.
  * This is somehow related to common try-catch exception handling constructs.
  *
- * @author Max Löffler <loeffler@zew.de>
- * @param `0'     Pass thru for assertion to verify
- * @param `throw' Error message to be shown when assertion is false
- * @param `rc0'   Pass thru for assert's option `rc0'
- * @param `null'  Pass thru for assert's option `null'
- * @param `fast'  Pass thru for assert's option `fast'
- * 
  * 2014-10-02   Initial version (v0.1)
  * 2014-10-16   Added Stata version and tagged `exp'
  * 
@@ -33,9 +26,16 @@
  * 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
  */
 
-version 13
 
+/**
+ * @param `0'     Pass thru for assertion to verify
+ * @param `throw' Error message to be shown when assertion is false
+ * @param `rc0'   Pass thru for assert's option `rc0'
+ * @param `null'  Pass thru for assert's option `null'
+ * @param `fast'  Pass thru for assert's option `fast'
+ */
 program define capass, byable(onecall)
+    version 13
     syntax anything(id=exp name=0) [if] [in] [, Throw(string) Rc0 Null Fast] 
     
     // Maybe a normal assert would be alight?

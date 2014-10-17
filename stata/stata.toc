@@ -2,6 +2,7 @@ v 3
 d Stata material by Max Löffler
 
 p capass       Wrapper for Stata's assert command, throws error messages
-p mvcollapse   Simple wrapper for Stata's collapse command, preserves missings
 p lslogit      Mixed logit labor supply estimation using Stata
+p mvcollapse   Simple wrapper for Stata's collapse command, preserves missings
+p uprateit     Uprate monetary variables according to inflation indicies
 * p mydate       Current time stamp
