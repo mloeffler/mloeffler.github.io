@@ -1,4 +1,4 @@
-*! version 0.1, 16oct2014, Max Löffler <loeffler@zew.de>
+*! version 0.1, 16oct2014, Max Loeffler <loeffler@zew.de>
 /**
  * CAPASS - WRAPPER FOR STATA'S ASSERT COMMAND, THROWS ERROR MESSAGES
  * 
