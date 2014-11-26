@@ -3,7 +3,7 @@ d CAPASS: Wrapper for Stata's assert command, throws error messages
 d
 d Author: Max Löffler
 d
-d Distribution-Date: 2014-10-16
-
+d Distribution-Date: 20141016
+d
 f capass/capass.ado
 f capass/capass.sthlp

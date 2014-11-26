@@ -1,9 +1,9 @@
 v 3
 d UPRATEIT: Uprate monetary variables according to inflation indicies
 d
-d Author: Max Löffler and Sebastian Siegloch
+d Authors: Max Löffler and Sebastian Siegloch
 d
-d Distribution-Date: 2014-10-16
-
+d Distribution-Date: 20141016
+d
 f uprateit/uprateit.ado
 f uprateit/uprateit_create_table.ado
