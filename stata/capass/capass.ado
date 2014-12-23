@@ -1,4 +1,4 @@
-*! version 0.1, 16oct2014, Max Loeffler <loeffler@zew.de>
+*! version 0.2, 23dec2014, Max Loeffler <loeffler@zew.de>
 /**
  * CAPASS - WRAPPER FOR STATA'S ASSERT COMMAND, THROWS ERROR MESSAGES
  * 
@@ -7,6 +7,7 @@
  *
  * 2014-10-02   Initial version (v0.1)
  * 2014-10-16   Added Stata version and tagged `exp'
+ * 2014-12-23   Make capass byable (v0.2)
  * 
  *
  * Copyright (C) 2014 Max Löffler <loeffler@zew.de>
@@ -37,20 +38,21 @@
 program define capass, byable(onecall)
     version 13
     syntax anything(id=exp name=0) [if] [in] [, Throw(string) Rc0 Null Fast] 
+    if (_by()) local by "by `_byvars' `_byrc0':"
     
     // Maybe a normal assert would be alight?
     if ("`throw'" != "") {
         // Test assertion
-        cap assert `0' `if' `in', fast
+        cap `by' assert `0' `if' `in', fast
         
         // Call the police if assertion failed, not in general
         if (inlist(_rc, 8, 9)) noi di as error "`throw'"
         
         // Run real assert command if error occured
-        if (_rc != 0) assert `0' `if' `in', `rc0' `null' `fast'
+        if (_rc != 0) `by' assert `0' `if' `in', `rc0' `null' `fast'
     }
     // Just assert and leave
-    else assert `0' `if' `in', `rc0' `null' `fast'
+    else `by' assert `0' `if' `in', `rc0' `null' `fast'
 end
 
 ***
