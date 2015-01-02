@@ -3,7 +3,7 @@ d WORDWRAP: Wraps a string to a specific number of characters
 d
 d Author: Max Löffler
 d
-d Distribution-Date: 20141125
+d Distribution-Date: 20150102
 d
 f wordwrap/wordwrap.ado
 f wordwrap/wordwrap.sthlp

@@ -1,4 +1,4 @@
-*! version 0.1, 25nov2014, Max Loeffler <loeffler@zew.de>
+*! version 0.2, 02jan2015, Max Loeffler <loeffler@zew.de>
 /**
  * WORDWRAP - WRAPS A STRING TO A SPECIFIC NUMBER OF CHARACTERS
  * 
@@ -12,9 +12,10 @@
  *  - http://www.stata.com/statalist/archive/2008-01/msg00579.html
  *
  * 2014-11-25   Initial version (v0.1)
+ * 2015-01-02   Bugfix (return text if length < maxlength)
  * 
  *
- * Copyright (C) 2014 Max Löffler <loeffler@zew.de>
+ * Copyright (C) 2014-2015 Max Löffler <loeffler@zew.de>
  * 
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -53,7 +54,7 @@ program define wordwrap, rclass
         }
     }
     // We are fine.
-    else local out `""`out'""'
+    else local out `""`text'""'
     
     // Return wrapped string
     return local text `out'
