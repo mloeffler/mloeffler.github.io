@@ -73,7 +73,7 @@ program define uprateit
     
     // Merge uprating table
     cap rename y`to' `bak_uprate'
-    qui merge m:1 year `using', assert(2 3) keep(3) nogen keepus(y`to')
+    qui merge m:1 year `using', keep(1 3) nogen keepus(y`to')
     
     // Uprate monetary variables
     foreach var of local varlist {
