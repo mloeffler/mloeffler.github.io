@@ -1,4 +1,4 @@
-*! version 0.1, 16oct2014, Max Löffler <loeffler@zew.de>
+*! version 0.2, 03jan2015, Max Loeffler <loeffler@zew.de>
 /**
  * UPRATEIT - UPRATE MONETARY VARIABLES ACCORDING TO INFLATION INDICIES
  * 
@@ -11,10 +11,11 @@
  *                  September 2014 (only West Germany until 1991)
  * 
  * 2014-10-16   Initial version (v0.1)
+ * 2015-01-03   Extend time series for Germany (CPI) until 1949 (v0.2)
  * 
  *
- * Copyright (C) 2014 Max Löffler <loeffler@zew.de>
- *                    Sebastian Siegloch <siegloch@uni-mannheim.de>
+ * Copyright (C) 2014-2015 Max Löffler <loeffler@zew.de>
+ *                         Sebastian Siegloch <siegloch@uni-mannheim.de>
  * 
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
