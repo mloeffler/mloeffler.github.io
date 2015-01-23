@@ -7,3 +7,5 @@ d Distribution-Date: 20150123
 d
 f lslogit/lslogit.ado
 f lslogit/lslogit.sthlp
+f lslogit/llslogit.mlib
+f lslogit/llslogit.mata
