@@ -8,4 +8,4 @@ d
 f lslogit/lslogit.ado
 f lslogit/lslogit.sthlp
 f lslogit/llslogit.mlib
-f lslogit/llslogit.mata
+f lslogit/llslogit.do
