@@ -3,7 +3,7 @@ d MVCOLLAPSE: Simple wrapper for Stata's collapse command, preserves missings
 d
 d Author: Max Löffler
 d
-d Distribution-Date: 20141028
+d Distribution-Date: 20150430
 d
 f mvcollapse/mvcollapse.ado
 f mvcollapse/mvcollapse.sthlp
