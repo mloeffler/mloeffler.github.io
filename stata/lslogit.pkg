@@ -3,7 +3,7 @@ d LSLOGIT: Mixed logit labor supply estimation using Stata
 d
 d Author: Max Löffler
 d
-d Distribution-Date: 20150721
+d Distribution-Date: 20160214
 d
 f lslogit/lslogit.ado
 f lslogit/lslogit_p.ado
