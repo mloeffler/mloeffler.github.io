@@ -1,0 +1,3 @@
+[submodule "stata/mvcollapse"]
+	path = stata/mvcollapse
+	url = https://github.com/mloeffler/mvcollapse.git
