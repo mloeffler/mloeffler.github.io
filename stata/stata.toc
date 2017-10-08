@@ -1,5 +1,5 @@
 v 3
-d Stata material by Max Löffler
+d Stata material by Max LÃ¶ffler
 
 p capass       Wrapper for Stata's assert command, throws error messages
 p lslogit      Mixed logit labor supply estimation using Stata
