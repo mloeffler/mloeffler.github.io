@@ -1,3 +1,6 @@
 [submodule "stata/mvcollapse"]
 	path = stata/mvcollapse
 	url = https://github.com/mloeffler/mvcollapse.git
+[submodule "stata/uprateit"]
+	path = stata/uprateit
+	url = https://github.com/mloeffler/uprateit
